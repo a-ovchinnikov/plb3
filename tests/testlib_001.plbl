@@ -1,0 +1,5 @@
+# A minimal library for testing.
+
+# Variables requirements: Z.
+# Side-effects: changes STDOUT.
+SUBPROG("VERIFY_Z_IS_1", BODY: PROG(IF(Z, THEN: PRINT("!"), ELSE: PRINT("*"))))

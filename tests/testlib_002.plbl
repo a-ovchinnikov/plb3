@@ -1,0 +1,10 @@
+VAR("MAGIC_VARIABLE")
+# Variables requirements: MAGIC_VARIABLE.
+# Side-effects: changes STDOUT.
+SUBPROG("VERIFY_SOME_MAGIC", BODY: PROG(IF(MAGIC_VARIABLE,
+					   THEN: PRINT("!"),
+					   ELSE: PRINT("*"))))
+
+# Variables requirements: MAGIC_VARIABLE.
+# Side-effects: changes MAGIC_VARIABLE.
+SUBPROG("DO_SOME_MAGIC", BODY: PROG(SET(MAGIC_VARIABLE, EQ(2, ADD(1, 1))),))
