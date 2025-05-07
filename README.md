@@ -3,4 +3,4 @@
 This is an unrefined collection of experimental code related to PL/B-3 project:
 a proto-compiler to Brainf--k. This is not a proper compiler, but
 rather a testbed for various techniques and styles which are
-to questionable to be used in actual production code.
+too questionable to be used in actual production code.
